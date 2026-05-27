@@ -330,7 +330,7 @@ export const StudyGuide: React.FC<StudyGuideProps> = ({
             </div>
             <div style={{ flexGrow: 1, backgroundColor: "var(--border-color)", position: "relative" }}>
               <iframe
-                src="/BABOK_Guide_v3_Member.pdf#toolbar=1"
+                src={`${import.meta.env.BASE_URL}BABOK_Guide_v3_Member.pdf#toolbar=1`}
                 width="100%"
                 height="100%"
                 title="BABOK Guide v3 PDF"
