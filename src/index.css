@@ -459,7 +459,7 @@ button, input, select {
 .translate-tooltip {
   position: absolute;
   z-index: 1000;
-  width: 280px;
+  width: 260px;
   background-color: var(--card-bg);
   border: 1px solid var(--primary-color);
   border-radius: var(--border-radius-md);
@@ -535,6 +535,58 @@ button, input, select {
 
 .translate-btn:hover {
   background-color: var(--primary-light);
+}
+
+/* Custom enhancements for TranslateTooltip */
+.translate-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0;
+  color: var(--text-muted);
+  gap: 0.5rem;
+}
+
+.translate-loading-spinner {
+  animation: spin 1s linear infinite;
+  color: var(--primary-color);
+}
+
+.translate-example-section {
+  margin-top: 0.75rem;
+  padding: 0.75rem;
+  background-color: var(--primary-light);
+  border-left: 3px solid var(--accent-color);
+  border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0;
+}
+
+.translate-example-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+.translate-example-en {
+  font-size: 0.85rem;
+  color: var(--text-color);
+  line-height: 1.4;
+}
+
+.translate-example-vi {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-top: 0.25rem;
+  line-height: 1.4;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 /* Key Takeaway box */
